@@ -1,10 +1,17 @@
 <html>
 <head>
   <title>小志是大傻逼</title>
+  <style>
+    .btn {
+      position: absolute;
+      height: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  </style>
 </head>
 <body>
   <h1>小志是大傻逼</h1>
-  <button id="btn">播放</button>
+  <button class="btn" id="btn">播放</button>
   <script type="text/javascript">
     var audio = new Audio('小志是傻逼.mp3');
   document.getElementById('btn').onclick = function(){
