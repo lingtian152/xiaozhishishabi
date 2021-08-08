@@ -1,0 +1,13 @@
+:root {
+    color: rgb(50, 50, 50)
+}
+
+body {
+    background: var(color);
+}
+
+.top-card {
+    background: rgb(125, 125, 125);
+    position: fixed;
+    top: 0%;
+}
