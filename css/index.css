@@ -41,3 +41,10 @@ body {
 .card h1 h3:hover {
     background-color: rgba(120, 120, 120, 0.5);
 }
+
+.btn {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 0%;
+}
