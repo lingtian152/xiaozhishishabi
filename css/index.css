@@ -1,5 +1,5 @@
 body {
-    background: url(../images/bg.jpg);
+    background: url(../images/bg1.jpg);
     margin: 0;
     padding: 0;
 }
@@ -23,8 +23,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 70%;
     height: 50%;
+    display: flex;
 }
 
 .card h1 {
