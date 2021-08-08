@@ -13,7 +13,7 @@ body {
 }
 
 .card {
-    background: rgb(100, 100, 100);
+    background: rgba(100, 100, 100,0.5);
     position: absolute;
     top: 50%;
     left: 50%;
