@@ -28,6 +28,7 @@ body {
     display: flex;
 }
 
-.card h1, .card h3{
+.card h1, .card h3
+{
     color: white;
 }
