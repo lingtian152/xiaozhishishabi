@@ -28,7 +28,16 @@ body {
     display: flex;
 }
 
-.card h1, .card h1 h3
+.card h1
 {
     color: white;
+}
+
+.card h1 h3 {
+    color: white;
+    transition: 0.25s;
+}
+
+.card h1 h3:hover {
+    background-color: rgba(120, 120, 120, 0.5);
 }
