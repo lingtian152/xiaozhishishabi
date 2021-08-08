@@ -9,7 +9,10 @@ body {
     left: 0%;
     width: 100%;
     display: block;
-    color: rgb(255,255,255)
+}
+
+.top-card ul p {
+    color: white;
 }
 
 .card {
