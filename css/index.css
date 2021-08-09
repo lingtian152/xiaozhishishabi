@@ -15,8 +15,6 @@ body {
 
 .announcement form button {
     position: absolute;
-    top: 100%;
-    right: 100%;
     background: none;
     border: none;
 }
@@ -64,4 +62,5 @@ body {
     border: none;
     position: absolute;
     left: 0%;
+    top: 5%;
 }
