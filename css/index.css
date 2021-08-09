@@ -5,6 +5,7 @@ body {
 }
 
 .announcement {
+    z-index: 100;
     background: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 50%;
