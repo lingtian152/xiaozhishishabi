@@ -14,6 +14,13 @@ body {
     display: flex;
 }
 
+.announcement form button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0%;
+}
+
 .top-card {
     background: rgba(125, 125, 125, 0.5);
     position: fixed;
