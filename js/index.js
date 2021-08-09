@@ -8,6 +8,6 @@ window.onload = function(){
     document.getElementById("body").style.background = `url(${img[randomIndex]})`
 }
 
-document.getElementById("submit").onclick = function(){
-    document.getElementById("announcement").remove();
+document.getElementById("close").onclick = function(){
+    document.getElementById("announcement").style.transform = "scale(0,0)";
 }
