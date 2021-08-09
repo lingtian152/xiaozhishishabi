@@ -17,12 +17,10 @@ body {
     box-shadow: 5px 5px 6px 0.5px rgba(34, 221, 221, 0.30);
 }
 
-.announcement form button {
-    background: none;
-    border: none;
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
+.announcement form input[type="submit"]{
+    background: rgb(32, 79, 180);
+    border-radius: 2px;
+
 }
 
 .top-card {
