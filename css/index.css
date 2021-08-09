@@ -4,6 +4,22 @@ body {
     padding: 0;
 }
 
+.announcement {
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.announcement form button {
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    background: none;
+    border: none;
+}
+
 .top-card {
     background: rgba(125, 125, 125, 0.5);
     position: fixed;
