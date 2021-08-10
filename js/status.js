@@ -14,5 +14,7 @@ function readTextFile(file) {
 
 while (true)
 {
-readTextFile("../status.txt")
+setTimeOut(function(){
+readTextFile("../status.txt");
+}, 2000);
 }
