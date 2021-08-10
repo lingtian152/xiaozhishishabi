@@ -12,4 +12,7 @@ function readTextFile(file) {
   rawfile.send(null);
 }
 
+while (true)
+{
 readTextFile("../status.txt")
+}
