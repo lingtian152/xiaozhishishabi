@@ -2,7 +2,8 @@ var img = [
     "../images/bg1.jpg",
     "../images/bg2.jpg",
     "../images/bg3.png",
-    "../images/bg4.png"
+    "../images/bg4.png",
+    "../images/bg5.png"
 ];
 
 window.onload = function(){
