@@ -1,6 +1,8 @@
 var img = [
     "../images/bg1.jpg",
-    "../images/bg2.jpg"
+    "../images/bg2.jpg",
+    "../images/bg3.png",
+    "../images/bg4.png"
 ];
 
 window.onload = function(){
@@ -9,5 +11,5 @@ window.onload = function(){
 }
 
 document.getElementById("close").onclick = function(){
-    document.getElementById("announcement").style.transform = "scale(0,0)";
+    document.getElementById("pop-card").style.transform = "scale(0,0)";
 }

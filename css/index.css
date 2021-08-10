@@ -1,11 +1,10 @@
 body {
-    background-size: auto;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
 
-.announcement {
+.pop-card {
     z-index: 20;
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
@@ -21,7 +20,7 @@ body {
     transition: 0.25s;
 }
 
-.announcement form button{
+.pop-card form button{
     position: absolute;
     right: 0%;
     background: none;
@@ -76,4 +75,35 @@ body {
 
 .card h3:hover {
     background: rgba(40, 40, 40, 0.35);
+}
+
+.footer nav {
+    background: rgba(125, 125, 125, 0.7);
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    right: 50%;
+}
+
+.announcement{
+    background: rgba(187, 255, 0, 0.582);
+    position: absolute;
+    top: 5%;
+    height: 3%;
+    width: 100%;
+}
+
+.announcement label {
+    color: white;
+    font-size: 20px;
+    clear: both;
+    position: absolute;
+    left: 50%;
 }
