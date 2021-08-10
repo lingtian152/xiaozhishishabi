@@ -5,14 +5,15 @@ function readTextFile(file) {
     if (rawfile.readyState === 4) {
       if (rawfile.status === 200 || rawfile.status === 0) {
         var allText = rawfile.responseText;
-        document.getElementById("announcement").onload = function()
-        {
-            document.getElementById("label").innerHTML = allText;
-        }
+        document.getElementById("announcement").onload = function () {
+          document.getElementById("label").innerHTML = allText;
+        };
       }
     }
   };
   rawfile.send(null);
 }
 
-readTextFile("../status.txt")
+addEventListener("change", () => {
+  readTextFile("../status.txt");
+});
