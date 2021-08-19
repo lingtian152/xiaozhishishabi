@@ -55,7 +55,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 65%;
     height: 60%;
     display: flex;
 }
@@ -93,17 +93,34 @@ body {
 }
 
 .announcement{
-    background: rgba(187, 255, 0, 0.582);
+    margin: auto;
+    background: rgba(200, 200, 200, 0.5);
     position: absolute;
     top: 5%;
     height: 3%;
-    width: 100%;
-}
-
-.announcement label {
+    width: 50%;
+    left: 0;
+    right: 0;
     color: white;
     font-size: 20px;
-    clear: both;
+}
+
+.date {
     position: absolute;
-    left: 50%;
+    margin: auto;
+    color: white;
+    left: 40%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.changelog {
+    margin: auto;
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    background: rgba(200,200,200,0.6);
+    width: 15%;
+    height: 60%;
 }
