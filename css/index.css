@@ -142,7 +142,7 @@ body {
   background-color: rgba(100, 100, 100, 0.3);
 }
 
-.card a {
+/* .card a {
   overflow: none;
   color: white;
   position: absolute;
@@ -151,7 +151,7 @@ body {
   font-size: 20px;
   list-style-type: none;
   text-decoration: none;
-}
+} */
 
 .load {
     opacity: 1;
