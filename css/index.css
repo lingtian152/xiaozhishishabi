@@ -1,7 +1,3 @@
-:root {
-  --innerRadius: 2em;
-}
-
 body {
   background-repeat: no-repeat;
   margin: 0;
@@ -50,6 +46,21 @@ body {
   position: absolute;
   top: 5%;
   color: white;
+  font-size: 20px;
+}
+
+.top-card ul a {
+  text-decoration: none;
+}
+
+.top-card ul a li {
+  color: white;
+  list-style: none;
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  right: 0;
+  top: 0;
   font-size: 20px;
 }
 
@@ -121,10 +132,11 @@ body {
   position: absolute;
   margin: auto;
   color: white;
-  left: 40%;
+  left: 80%;
   right: 0;
   top: 0;
   bottom: 0;
+  font-size: 20px;
 }
 
 .changelog {
@@ -141,82 +153,3 @@ body {
   color: whitesmoke;
   background-color: rgba(100, 100, 100, 0.3);
 }
-
-/* .card a {
-  overflow: none;
-  color: white;
-  position: absolute;
-  top: 10%;
-  left: 45%;
-  font-size: 20px;
-  list-style-type: none;
-  text-decoration: none;
-} */
-
-.load {
-    opacity: 1;
-    z-index: 10000;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background: whitesmoke;
-    transition: 0.5s;
-}
-
-.wrapper{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%); 
-  }
-
-  .circle{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #fcdc29;
-    border-radius: 50%;
-    animation: loading 1.5s cubic-bezier(.8, .5, .2, 1.4) infinite;
-    transform-origin: bottom center;
-    position: relative;
-  }
-
-  @keyframes loading{
-    0%{
-      transform: translateY(0px);
-      background-color: rgb(0, 255, 85);
-    }
-    50%{
-      transform: translateY(50px);
-      background-color: #ef584a;
-    }
-    100%{
-      transform: translateY(0px);
-      background-color: #fcdc29;
-    }
-  }
-
-  .circle-1{
-    animation-delay: 0.1s;
-  }
-  .circle-2{
-    animation-delay: 0.2s;
-  }
-  .circle-3{
-    animation-delay: 0.3s;
-  }
-  .circle-4{
-    animation-delay: 0.4s;
-  }
-  .circle-5{
-    animation-delay: 0.5s;
-  }
-  .circle-6{
-    animation-delay: 0.6s;
-  }
-  .circle-7{
-    animation-delay: 0.7s;
-  }
-  .circle-8{
-    animation-delay: 0.8s;
-  }
