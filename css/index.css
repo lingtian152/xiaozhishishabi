@@ -42,7 +42,7 @@ body {
   display: flex;
 }
 
-.top-card ul p {
+.top-card p {
   position: absolute;
   top: 5%;
   color: white;
@@ -58,6 +58,17 @@ body {
   list-style: none;
   position: absolute;
   left: 40%;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+.top-card ul a[aria-label="首页"] li {
+  color: white;
+  list-style: none;
+  position: absolute;
+  left: 30%;
   bottom: 0;
   right: 0;
   top: 0;
