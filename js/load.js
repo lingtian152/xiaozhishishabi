@@ -1,6 +1,5 @@
 var load = document.getElementById("load")
 
-
 if (document.readyState)
 {
     setTimeout(() => {
@@ -9,4 +8,5 @@ if (document.readyState)
             load.remove();
         }, 200);
     }, 2000);
+    document.cookie.replace("ascz", )
 }
