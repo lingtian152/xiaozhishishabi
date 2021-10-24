@@ -1,0 +1,45 @@
+.top-card {
+    margin: 0%;
+    padding: 0%;
+    background: rgba(125, 125, 125, 0.5);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    z-index: 10;
+  }
+  
+  .top-card p {
+    position: absolute;
+    top: 5%;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .top-card ul a {
+    text-decoration: none;
+  }
+  
+  .top-card ul a li {
+    color: white;
+    list-style: none;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+  }
+  
+  .top-card ul a[aria-label="首页"] li {
+    color: white;
+    list-style: none;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+  }

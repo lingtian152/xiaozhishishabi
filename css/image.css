@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #78909c;
+	overflow: none;
+}
+
+#image-lib {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+#image-lib nav {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#image-lib nav img {
+	flex: 50%;
+	max-width: 48%;
+	padding: 0 4px;
+	width: 25%;
+	height: 25%;
+}
+
+#image-lib nav img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
