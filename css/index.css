@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-repeat: no-repeat;
   margin: 0;
@@ -21,13 +26,16 @@ body {
 }
 
 .pop-card form button {
-  position: absolute;
-  right: 0%;
-  background: none;
-  border-radius: 5px;
-  bottom: 0%;
-  font-size: 20px;
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 8px;
+  color: black;
+  border: none;
+  padding: 10px;
+  font-size: 25px;
   display: flex;
+  position: absolute;
+  bottom: 3.5%;
+  right: 5%;
 }
 
 .card {
@@ -51,6 +59,13 @@ body {
   top: 10%;
   color: white;
   transition: 0.35s;
+}
+
+.card h4 {
+  position: absolute;
+  top: 20%;
+  font-size: 20px;
+  color: white;
 }
 
 .card h3:hover {

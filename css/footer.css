@@ -1,23 +1,40 @@
-.footer nav {
-    background: rgba(125, 125, 125, 0.7);
-    width: 100%;
-    height: 5%;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .footer p {
-    font-size: 15px;
-    color: white;
-    position: absolute;
-    right: 50%;
-  }
-  
-  .footer a {
-    color: white;
-    position: absolute;
-    top: 25%;
-    right: 45%;
-    text-decoration: none;
-    font-size: 16px;
-  }
+.footer {
+  background: rgba(125, 125, 125, 0.5);
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  height: auto;
+  display: table-cell;
+  z-index: 10;
+  overflow: none;
+}
+
+.footer nav p {
+  position: absolute;
+  left: 40%;
+  top: 5.5%;
+  text-align: start;
+  color: white;
+  font-size: 25px;
+}
+
+.footer nav a{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 50%;
+}
+
+.footer nav a{
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 20px;
+  height: auto;
+  overflow: none;
+}
+
+.footer nav a {
+  list-style-type: none;
+}
