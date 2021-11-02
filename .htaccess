@@ -5,9 +5,15 @@ ErrorDocument 408 /408.html
 Order deny,allow
 Deny from all
 
-RewriteEngine on
-RewriteRule ^$ /loadpage.html [L]
-
 <FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|svg)$">
-Header set Cache-Control "max-age=2592000"
+    Header set Cache-Control "max-age=2592000"
 </FilesMatch>
+
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+   RewriteRule .* http://localhost/html/%1 [R=301,L]
+
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
+   RewriteRule .* %1.html [L]
+</IfModule>
