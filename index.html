@@ -8,14 +8,14 @@
 
     <script language="javascript">
         var num = 5; //倒计时的秒数
-        var URL = "home.html";
-        window.setTimeout("doUpdate()", 1500);
+        var URL = "home";
+        window.setTimeout("doUpdate()", 1000);
         function doUpdate() {
           if (num != 0) {
             document.getElementById("page_div").innerHTML =
               "将在" + num + "秒后自动跳转到首页";
             num--;
-            window.setTimeout("doUpdate()", 1500);
+            window.setTimeout("doUpdate()", 1000);
           } else {
             num = 4;
             window.location = URL;
