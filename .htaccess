@@ -1,6 +1,6 @@
 ErrorDocument 404 /404
 ErrorDocument 500 /500
-rrorDocument 408 /408
+ErrorDocument 408 /408
 
 Order deny,allow
 Deny from all
