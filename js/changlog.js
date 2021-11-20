@@ -1,11 +1,3 @@
-// $.get("../log.txt", function (data, item) {
-//   var txt2 = $("<p></p>").text(data);
-
-//   for (let index = 0; index < txt2.length; index++) {
-//     $("#changelog-txt").append(txt2);
-//   }
-// });
-
 function changeline(text) {
   var htmls = [];
   var lines = text.split(/\n/);
@@ -28,7 +20,7 @@ function loadlink() {
     url: "../log.txt",
     dataType: "text",
     success: function (data) {
-      $("#changelog-txt").load(changeline(data));
+      $("#changelog-txt").html(changeline(data));
     },
   });
 }
