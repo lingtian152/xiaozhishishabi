@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>傻逼小志の图片库</title>
+    <link rel="stylesheet" href="/css/load.css" />
     <link rel="stylesheet" href="/css/topbar.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/image.css" />
-    <script data-ad-client="ca-pub-8229591117115313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/vue.min.js"></script>
+    <script
+      data-ad-client="ca-pub-8229591117115313"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
   </head>
   <body>
+    <div class="loading-bar" id="loading">
+      <div class="bar"></div>
+      <p>正在为你加载页面</p>
+    </div>
     <div>
       <p
         style="
@@ -23,7 +35,6 @@
       </p>
     </div>
     <div class="top-card">
-      <p>傻逼小志</p>
       <ul>
         <a href="./index" aria-label="首页">
           <li>首页</li>
@@ -36,29 +47,29 @@
     <div class="date" id="date"></div>
     <div class="image-lib">
       <nav>
-        <a id="download" href="./images/bg1.jpg" download="./images/bg1.jpg">
-          <img id="img" src="./images/bg1.jpg" />
+        <a id="download" href="./images/bg1.png" download="./images/bg1.png">
+          <img id="img" loading="eager" src="./images/bg1.png" />
         </a>
-        <a id="download" href="./images/bg2.jpg" download="./images/bg2.jpg">
-          <img id="img" src="./images/bg2.jpg"
+        <a id="download" href="./images/bg2.png" download="./images/bg2.png">
+          <img id="img" loading="eager" src="./images/bg2.png"
         /></a>
         <a id="download" href="./images/bg3.png" download="./images/bg3.png">
-          <img id="img" src="./images/bg3.png" />
+          <img id="img" loading="eager" src="./images/bg3.png" />
         </a>
         <a id="download" href="./images/bg4.png" download="./images.bg4.png">
-          <img id="img" src="./images/bg4.png" />
+          <img id="img" loading="eager" src="./images/bg4.png" />
         </a>
         <a id="download" href="./images/bg5.png" download="./images/bg5.png">
-          <img id="img" src="./images/bg5.png" />
+          <img id="img loading="eager"" src="./images/bg5.png" />
         </a>
-        <a id="download" href="./images/bg6.jpg" download="./images/bg6.jpg">
-          <img id="img" src="./images/bg6.jpg" />
+        <a id="download" href="./images/bg6.png" download="./images/bg6.png">
+          <img id="img" loading="eager" src="./images/bg6.png" />
         </a>
         <a id="download" href="./images/bg7.png" download="./images/bg7.png">
-          <img id="img" src="./images/bg7.png" />
+          <img id="img" loading="eager" src="./images/bg7.png" />
         </a>
         <a id="download" href="./images/bg8.png" download="./images/bg8.png">
-          <img id="img" src="./images/bg8.png" />
+          <img id="img" loading="eager" src="./images/bg8.png" />
         </a>
       </nav>
     </div>
@@ -70,7 +81,16 @@
         <a href="mailto:1553396053skwa@gmail.com">联系</a>
       </nav>
     </div>
-    <script src="./js/time.js"></script>
-    <script type="text/javascript" src="./js/imageload.js"></script>
+    <script src="./js/topbar.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        setTimeout(() => {
+          $("#loading").css("opacity", "0");
+          setTimeout(() => {
+            $("#loading").remove();
+          }, 1000);
+        }, 3500);
+      });
+    </script>
   </body>
 </html>

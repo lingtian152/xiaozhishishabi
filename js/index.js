@@ -1,13 +1,13 @@
-// if (document.cookie.split == "pop-card=true; expires=" + new Date(9999, 12, 13).toUTCString + "; path=/") {
-//   document.getElementById("pop-card").style.display = "none";
-// }
+$(document).ready(function () {
+  if ($.cookie("pop-card")) {
+    $("#pop-card").remove();
+  }
+});
 
-document.getElementById("close").onclick = function () {
-  document.getElementById("pop-card").style.transform = "scale(0,0)";
-  document.cookie =
-  "pop-card=true; expires=" + new Date(9999, 12, 13).toUTCString + "; path=/";
-
+$("#close").click(function () {
+  $("#pop-card").css("transform", "scale(0,0)");
+  $.cookie("pop-card", "true", { expires: 7 });
   setTimeout(() => {
-    document.getElementById("pop-card").remove();
-  }, 2000);
-};
+    $("#pop-card").remove();
+  }, 500);
+});

@@ -2,11 +2,16 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>傻逼小志の博客</title>
+    <link rel="stylesheet" href="/css/toggle.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/topbar.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/changelog.css">
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script  src="./js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="./js/vue.min.js"></script>
     <script data-ad-client="ca-pub-8229591117115313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body id="body">
@@ -21,7 +26,6 @@
       </form>
     </div>
     <div class="top-card">
-      <p>傻逼小志</p>
       <ul>
         <a href="./index" aria-label="首页">
           <li>
@@ -33,27 +37,26 @@
             背景图片库
           </li>
         </a>
-      </ul>  
-    </div>
-    <div class="date" id="date">
+      </ul>
+      <div class="date" id="date"></div>
     </div>
     <div class="card">
-      <h1>小志是谁？
+      <h1>
+        小志是谁？
         <h3>一个屑人罢了，不需要在意这么多
           小志是傻逼！！！！！
         </h3>
+        <h3>一个保底人</h3>
+        <h3>一个炼铜术士</h3>
+        <h4>我的小志&#129316;&#129316;&#129316;</h4>
       </h1>
-      <h4>我的小志&#129316;&#129316;&#129316;</h4>
     </div>
     <div class="changelog" id="changelog">
       <h2>
         更新日志
       </h2>
-      <h3 class="changelog-text">
-          11/1/2021 更新日志:
-          <h4>
-            1. 修改了布局
-          </h4>
+      <h3 class="changelog-text" id="changelog-txt">
+        
       </h3>
     </div>
     <!--footer-->
@@ -64,8 +67,8 @@
       </nav>
     </div>
     <script type="text/javascript" src="./js/index.js"></script>
-    <script type="text/javascript" src="./js/time.js"></script>
+    <script type="text/javascript" src="./js/topbar.js"></script>
     <script type="text/javascript" src="./js/image.js"></script>
-    <script src="jquery-1.11.3.min.1.js"></script>
+    <script type="text/javascript" src="./js/changlog.js"></script>
     <body>
 </html>

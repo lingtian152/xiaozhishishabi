@@ -1,4 +1,8 @@
+* {padding: 0; margin: 0; outline: none;}
+
 .footer {
+  padding: 0;
+  margin: 0;
   background: rgba(125, 125, 125, 0.5);
   position: fixed;
   bottom: 0%;
@@ -6,7 +10,6 @@
   height: auto;
   display: table-cell;
   z-index: 10;
-  overflow: none;
 }
 
 .footer nav p {
@@ -23,9 +26,6 @@
   text-align: center;
   position: relative;
   left: 50%;
-}
-
-.footer nav a{
   color: white;
   text-align: center;
   padding: 5px 5px;
@@ -33,8 +33,5 @@
   font-size: 20px;
   height: auto;
   overflow: none;
-}
-
-.footer nav a {
   list-style-type: none;
 }

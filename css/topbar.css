@@ -1,3 +1,5 @@
+* {padding: 0; margin: 0; outline: none;}
+
 .top-card {
   background: rgba(125, 125, 125, 0.5);
   position: fixed;
@@ -5,8 +7,7 @@
   width: 100%;
   height: auto;
   display: table-cell;
-  z-index: 10;
-  overflow: none;
+  z-index: 5;
 }
 
 .date {
@@ -16,15 +17,6 @@
   position: absolute;
   left: 90%;
   top: 1.5%;
-}
-
-.top-card p {
-  position: absolute;
-  left: 2%;
-  top: 5.5%;
-  text-align: start;
-  color: white;
-  font-size: 25px;
 }
 
 .top-card ul a{

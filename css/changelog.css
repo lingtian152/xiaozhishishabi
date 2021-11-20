@@ -1,7 +1,5 @@
 .changelog {
-    margin: auto;
     position: absolute;
-    padding: 2 auto;
     left: 2%;
     top: 20%;
     background: rgba(200, 200, 200, 0.6);
@@ -10,13 +8,12 @@
     color: white;
     background-color: rgba(100, 100, 100, 0.3);
     font-size: 21px;
+    padding: 10px;
+    border-radius: 25px;
 }
 
-.changelog-text
-{
-    background-color: rgba(100, 100, 100, 0.3);
-}
-
-.changelog-text h4 {
-    background-color: rgba(100, 100,100, 0.3)
+.changelog-text {
+    background-color: rgba(3, 3, 3, 0.3);
+    padding: 10px !important;
+    margin: auto;
 }
