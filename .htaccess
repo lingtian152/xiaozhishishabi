@@ -5,6 +5,10 @@ ErrorDocument 408 /408
 Order deny,allow
 Deny from all
 
+RewriteEngine on
+
+RewriteRule ^folder/?$ - [F,L]
+
 <FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|svg)$">
     Header set Cache-Control "max-age=2592000"
 </FilesMatch>
