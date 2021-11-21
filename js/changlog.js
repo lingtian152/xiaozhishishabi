@@ -12,13 +12,14 @@ function changeline(text) {
   for (var i = 0; i < lines.length; i++) {
     htmls.push(tmpDiv.text(lines[i]).html());
   }
-  return htmls.join("<br>");
+  return htmls.join("<h4>");
 }
 
 function loadlink() {
   $.ajax({
     url: "../log.txt",
     dataType: "text",
+    async: false,
     success: function (data) {
       $("#changelog-txt").html(changeline(data));
     },
@@ -28,4 +29,4 @@ function loadlink() {
 loadlink(); // This will run on page load
 setInterval(function () {
   loadlink(); // this will run after every 5 seconds
-}, 10000);
+}, 60000);
