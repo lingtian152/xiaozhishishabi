@@ -10,10 +10,25 @@
     font-size: 21px;
     padding: 10px;
     border-radius: 25px;
+    text-align: center;
+    overflow-y: scroll;
+    max-width: 25%;
+    max-height: 75%;
+}
+
+.changelog fieldset {
+    border-radius: 25px;
+    border: 0.5px solid rgba(255, 255, 255, 0.45);
+}
+
+.changelog fieldset legend {
+    background: rgba(200, 200, 200, 0.25);
+    font-size: 25px;
 }
 
 .changelog-text {
     background-color: rgba(3, 3, 3, 0.3);
-    padding: 10px !important;
-    margin: auto;
+    padding: 25px;
+    border-radius: 25px;
+    margin: 15px;
 }

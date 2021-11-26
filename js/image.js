@@ -1,16 +1,4 @@
-var img = [
-  "../images/bg1.png",
-  "../images/bg2.png",
-  "../images/bg3.png",
-  "../images/bg4.png",
-  "../images/bg5.png",
-  "../images/bg6.png",
-  "../images/bg7.png",
-  "../images/bg8.png",
-];
+var path = "../images";
 
-$(document).ready(function()
-{
-  var randomIndex = Math.floor(Math.random() * img.length);
-  $("#body").css("background", `url(${img[randomIndex]})`)
-});
+var randomIndex = path + "/bg" + Math.floor(1 + Math.random() * 8) + ".png";
+$("#body").css("background", `url(${randomIndex})`);

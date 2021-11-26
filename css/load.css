@@ -12,45 +12,34 @@
     transition: 0.25s;
 }
 
-.bar {
-    background-color: rgb(255, 255, 255);
+#base {
+    width: 15%;
+    background-color: rgb(200, 200, 200);
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    animation: load 1.5s 1.5s infinite;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#bar {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 .loading-bar p {
+    width: auto;
+    height: auto;
     font-size: 25px;
     position: absolute;
-    top: 57%;
-    left: 50%;
+    top: 55%;
+    left: 45%;
     right: 0;
     bottom: 0;
     margin: auto;
     color: white;
-}
-
-@keyframes load {
-    0% {
-        transform: scale(0, 0);
-        opacity: 0;
-    }
-
-    50% {
-        transform: scale(1, 1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(0,0);
-        opacity: 0;
-    }
 }

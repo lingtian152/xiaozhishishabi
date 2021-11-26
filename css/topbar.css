@@ -1,6 +1,12 @@
-* {padding: 0; margin: 0; outline: none;}
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  overflow: none;
+}
 
 .top-card {
+  border-bottom: 1px solid #fff;
   background: rgba(125, 125, 125, 0.5);
   position: fixed;
   top: 0%;
@@ -15,18 +21,19 @@
   z-index: 11;
   font-size: 25px;
   position: absolute;
-  left: 90%;
-  top: 1.5%;
+  right: 1%;
+  top: 0%;
+  padding: 10px;
 }
 
-.top-card ul a{
+.top-card ul a {
   display: inline-block;
   text-align: center;
   position: relative;
   left: 40%;
 }
 
-.top-card ul a{
+.top-card ul a {
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -41,6 +48,6 @@
 }
 
 .top-card ul a:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
 }

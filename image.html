@@ -18,7 +18,9 @@
   </head>
   <body>
     <div class="loading-bar" id="loading">
-      <div class="bar"></div>
+      <div id="base" class="base">
+        <div id="bar" class="bar"></div>
+      </div>
       <p>正在为你加载页面</p>
     </div>
     <div>
@@ -39,12 +41,12 @@
         <a href="./index" aria-label="首页">
           <li>首页</li>
         </a>
-        <a href="./image" class="images" aria-label="图片库">
+        <a href="./image" class="images">
           <li>背景图片库</li>
         </a>
       </ul>
+      <div class="date" id="date"></div>
     </div>
-    <div class="date" id="date"></div>
     <div class="image-lib">
       <nav>
         <a id="download" href="./images/bg1.png" download="./images/bg1.png">
@@ -73,7 +75,6 @@
         </a>
       </nav>
     </div>
-    <div class="date" id="date"></div>
     <!--footer-->
     <div class="footer">
       <nav>
@@ -83,14 +84,33 @@
     </div>
     <script src="./js/topbar.js"></script>
     <script type="text/javascript">
-      $(document).ready(function () {
-        setTimeout(() => {
-          $("#loading").fadeOut();
-          setTimeout(() => {
-            $("#loading").remove();
-          }, 1000);
-        }, 3500);
-      });
+      var i = 0;
+      function move() {
+        if (i == 0) {
+          i = 1;
+          var elem = document.getElementById("bar");
+          var width = 10;
+          var id = setInterval(frame, 10);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+              i = 0;
+              setTimeout(() => {
+                $("#loading").fadeOut();
+              }, 1000);
+              setTimeout(() => {
+                $("#loading").remove();
+              }, 5000);
+            } else {
+              setTimeout(() => {
+                width++;
+                elem.style.width = width + "%";
+              }, 3500);
+            }
+          }
+        }
+      }
+      move();
     </script>
   </body>
 </html>

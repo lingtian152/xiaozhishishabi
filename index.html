@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>傻逼小志の博客</title>
-    <link rel="stylesheet" href="/css/toggle.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/topbar.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/changelog.css">
     <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
     <script  src="./js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="./js/vue.min.js"></script>
     <script data-ad-client="ca-pub-8229591117115313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body id="body">
+    <div class="top-card">
+      <ul>
+        <a href="./index" aria-label="home">
+          <li>首页</li>
+        </a>
+        <a href="./image" class="images" aria-label="images">
+          <li>背景图片库</li>
+        </a>
+        <a href="./about" class="uploader-image">
+          <li>关于我</li>
+        </a>
+      </ul>
+      <div class="date" id="date"></div>
+    </div>
     <div id="pop-card" class="pop-card">
       <form id="form">
         <h1>公告
@@ -25,39 +37,24 @@
         <button id="close"type="button">确定</button>
       </form>
     </div>
-    <div class="top-card">
-      <ul>
-        <a href="./index" aria-label="首页">
-          <li>
-            首页
-          </li>
-        </a>
-        <a href="./image" class="images">
-          <li>
-            背景图片库
-          </li>
-        </a>
-      </ul>
-      <div class="date" id="date"></div>
-    </div>
+    
     <div class="card">
-      <h1>
-        小志是谁？
-        <h3>一个屑人罢了，不需要在意这么多
-          小志是傻逼！！！！！
-        </h3>
-        <h3>一个保底人</h3>
-        <h3>一个炼铜术士</h3>
-        <h4>我的小志&#129316;&#129316;&#129316;</h4>
-      </h1>
+      <fieldset>
+        <legend>小志是谁</legend>
+          <h3>一个屑人罢了，不需要在意这么多</h3>
+          <h3>小志是傻逼！！！！！</h3>
+          <h3>一个保底人</h3>
+          <h3>一个炼铜术士</h3>
+          <h4>我的小志&#129316;&#129316;&#129316;</h4>
+      </fieldset>
     </div>
     <div class="changelog" id="changelog">
-      <h2>
-        更新日志
-      </h2>
-      <h3 class="changelog-text" id="changelog-txt">
-        
-      </h3>
+      <fieldset>
+        <legend>更新日志: </legend>
+        <h3 class="changelog-text" id="changelog-txt">
+          
+        </h3>
+      </fieldset>
     </div>
     <!--footer-->
     <div class="footer">

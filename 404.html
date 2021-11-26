@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>404 页面被小志吃了</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/topbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
       body {
         background: none;
@@ -10,28 +13,49 @@
       }
 
       .page-not-found {
-        background: rgba(40,40,40,0.5);
+        background: rgba(40, 40, 40, 0.5);
         overflow: none;
         display: inline-flex;
-        top: 0%;
-        left: 0%;
-        right: 0%;
-        bottom: 0%;
-      }
-
-      .page-not-found{
         color: white;
-        top: 0%;
-        left: 0%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
       }
     </style>
-    <script data-ad-client="ca-pub-8229591117115313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      data-ad-client="ca-pub-8229591117115313"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
   </head>
   <body id="body">
+    <div class="top-card">
+      <ul>
+        <a href="./index" aria-label="home">
+          <li>首页</li>
+        </a>
+        <a href="./image" class="images" aria-label="images">
+          <li>背景图片库</li>
+        </a>
+        <a href="./about" class="uploader-image">
+          <li>关于我</li>
+        </a>
+      </ul>
+      <div class="date" id="date"></div>
+    </div>
     <div class="page-not-found">
       <h1>404 页面被小志吃了</h1>
     </div>
+    <!--footer-->
+    <div class="footer">
+      <nav>
+        <p>©2021-2021</p>
+        <a href="mailto:1553396053skwa@gmail.com">联系</a>
+      </nav>
+    </div>
     <script type="text/javascript" src="./js/image.js"></script>
+    <script src="./js/topbar.js"></script>
   </body>
 </html>
