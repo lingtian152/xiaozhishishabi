@@ -22,7 +22,6 @@
 }
 
 .changelog fieldset legend {
-    background: rgba(200, 200, 200, 0.25);
     font-size: 25px;
 }
 
@@ -31,4 +30,5 @@
     padding: 25px;
     border-radius: 25px;
     margin: 15px;
+    line-height: 45px;
 }

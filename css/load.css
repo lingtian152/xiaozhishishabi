@@ -12,7 +12,7 @@
     transition: 0.25s;
 }
 
-#base {
+#progress {
     width: 15%;
     background-color: rgb(200, 200, 200);
     position: absolute;
@@ -23,10 +23,10 @@
     border-radius: 5px;
 }
 
-#bar {
+#progress-bar {
     width: 0%;
     height: 30px;
-    background-color: green;
+    background-color: blue;
     overflow: hidden;
     border-radius: 5px;
 }

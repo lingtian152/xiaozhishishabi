@@ -1,18 +1,11 @@
-* {
-  padding: 0;
-  margin: 0;
-  outline: none;
-  overflow: none;
-}
-
 body {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .pop-card {
   z-index: 20;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgb(255, 255, 255);
   position: absolute;
   margin: auto;
   top: 0;
@@ -62,8 +55,7 @@ body {
   border: 5px solid rgba(255, 255, 255, 0.45);
 }
 
-.card fieldset h3,
-.card fieldset h4 {
+.card fieldset ul li {
   padding: 15px;
   background: rgba(50, 50, 50, 0.25);
 }

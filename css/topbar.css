@@ -6,7 +6,7 @@
 }
 
 .top-card {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2.5px solid #fff;
   background: rgba(125, 125, 125, 0.5);
   position: fixed;
   top: 0%;
@@ -14,16 +14,7 @@
   height: auto;
   display: table-cell;
   z-index: 5;
-}
-
-.date {
-  color: white;
-  z-index: 11;
-  font-size: 25px;
-  position: absolute;
-  right: 1%;
-  top: 0%;
-  padding: 10px;
+  list-style-type: none;
 }
 
 .top-card ul a {
@@ -41,13 +32,28 @@
   font-size: 20px;
   height: auto;
   overflow: none;
+  transition: 0.25s all ease-in-out;
 }
 
-.top-card ul a li {
-  list-style-type: none;
+.top-card ul a[aria-current="page"] {
+  background: rgba(40, 40, 40, 0.25);
+}
+
+.date {
+  color: white;
+  z-index: 11;
+  font-size: 25px;
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  padding: 10px;
+}
+
+.top-card ul a::before {
+  color: white;
 }
 
 .top-card ul a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+  color: #fef8de;
+  background: #7b8c7c4d;
 }

@@ -1,4 +1,8 @@
-* {padding: 0; margin: 0; outline: none;}
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
 
 .footer {
   padding: 0;
@@ -14,18 +18,18 @@
 
 .footer nav p {
   position: absolute;
-  left: 40%;
+  left: 10%;
   top: 5.5%;
   text-align: start;
   color: white;
   font-size: 25px;
 }
 
-.footer nav a{
+.footer nav a {
   display: inline-block;
   text-align: center;
   position: relative;
-  left: 50%;
+  left: 20%;
   color: white;
   text-align: center;
   padding: 5px 5px;
@@ -34,4 +38,12 @@
   height: auto;
   overflow: none;
   list-style-type: none;
+}
+
+
+.footer .github {
+  position: relative;
+  left: 85%;
+  height: auto;
+  display: inline-block;
 }
