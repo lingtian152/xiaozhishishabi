@@ -1,8 +1,3 @@
-const UA = navigator.userAgent
-
-if (UA.device === "iphone" || "android") {
-   location.replace("https://m.xiaozhishishabi.tk/")
-   return false
-} else {
-   return true
-}
+if ($.browser.device == /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
+   location.replace("m.xiaozhishishabi.tk")
+};
