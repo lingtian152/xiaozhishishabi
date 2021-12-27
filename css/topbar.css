@@ -22,9 +22,6 @@
   text-align: center;
   position: relative;
   left: 40%;
-}
-
-.top-card ul a {
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -35,8 +32,8 @@
   transition: 0.25s all ease-in-out;
 }
 
-.top-card ul a[aria-current="page"] {
-  background: rgba(40, 40, 40, 0.25);
+.top-card ul a:hover {
+  color: rgb(0, 0, 255);
 }
 
 .date {
@@ -47,13 +44,4 @@
   right: 1%;
   top: 0%;
   padding: 10px;
-}
-
-.top-card ul a::before {
-  color: white;
-}
-
-.top-card ul a:hover {
-  color: #fef8de;
-  background: #7b8c7c4d;
 }

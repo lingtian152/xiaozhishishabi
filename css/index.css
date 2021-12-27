@@ -41,18 +41,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  background-color: rgba(50, 50, 50, 0) !important;
 }
 
 .card fieldset legend {
   font-size: 25px;
   text-align: center;
   color: white;
-  background-color: rgba(25, 25, 25, 0.5);
 }
 
 .card fieldset {
   border-radius: 25px;
-  border: 5px solid rgba(255, 255, 255, 0.45);
 }
 
 .card fieldset ul li {

@@ -1,11 +1,17 @@
+$( document ).ready(function() {
   if ($.cookie("pop-card")) {
     $("#pop-card").remove();
   };
+});
+
+// if ($.cookie("pop-card")) {
+  //   $("#pop-card").remove();
+  // };
 
 $("#close").click(function () {
   $("#pop-card").fadeOut();
   $.cookie("pop-card", "true", { expires: 7 });
   setTimeout(() => {
     $("#pop-card").remove();
-  }, 10000);
+  }, 5000);
 });
