@@ -1,14 +1,11 @@
-$( document ).ready(function() {
-  if ($.cookie("pop-card")) {
-    $("#pop-card").remove();
-  };
-});
-
-
-$("#close").click(function () {
-  $("#pop-card").fadeOut();
-  $.cookie("pop-card", "true", { expires: 7 });
-  setTimeout(() => {
-    $("#pop-card").remove();
-  }, 5000);
-});
+if ($.cookie("pop-card") == null) {
+  $("#close").click(function () {
+    $.cookie("pop-card", "true", {expires: 7});
+    $("#pop-card").fadeOut();
+    setTimeout(() => {
+      $("#pop-card").remove();
+    }, 5000);
+  });
+} else {
+  $("#pop-card").remove();
+}
