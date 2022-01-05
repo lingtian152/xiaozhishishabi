@@ -30,11 +30,14 @@
   height: auto;
   overflow: none;
   transition: 0.25s all ease-in-out;
+  border-radius: 10px;
 }
+
 
 .top-card ul a:hover {
   color: rgb(0, 0, 255);
 }
+
 
 .date {
   color: white;

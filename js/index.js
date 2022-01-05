@@ -4,9 +4,6 @@ $( document ).ready(function() {
   };
 });
 
-// if ($.cookie("pop-card")) {
-  //   $("#pop-card").remove();
-  // };
 
 $("#close").click(function () {
   $("#pop-card").fadeOut();

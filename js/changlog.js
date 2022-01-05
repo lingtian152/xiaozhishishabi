@@ -5,11 +5,11 @@ function changeline(text) {
   for (var i = 0; i < lines.length; i++) {
     htmls.push(tmpDiv.text(lines[i]).html());
   }
-  return htmls.join("<h4>");
+  return htmls.join("<br><h4><br>");
 }
 
 function loadlink() {
-  $.ajaxSetup ({cache:false});
+  $.ajaxSetup ({cache:true});
 
   $.ajax({
     url: "../log.txt",
