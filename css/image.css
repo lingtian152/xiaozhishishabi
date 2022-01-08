@@ -12,10 +12,10 @@ body {
 .image-lib {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 4px;
+	padding: 0 10px;
 }
 
-.image-lib nav {
+.image-lib ul {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -25,12 +25,11 @@ body {
 }
 
 /* Create four equal columns that sits next to each other */
-.image-lib nav a img {
-	z-index: 5;
-	flex: 25%;
-	max-width: 25%;
+.image-lib ul img {
+	flex: 60%;
+	max-width: 20%;
 	padding: 0 4px;
-	margin-top: 8px;
+	margin-top: 10px;
 	vertical-align: middle;
 	height: 45%;
 	width: 45%;;
@@ -38,5 +37,6 @@ body {
 }
 
 img:hover {
-	transform: scale(1.5, 1.5);
+	z-index: 10;
+	transform: scale(3.5,3.5);
 }

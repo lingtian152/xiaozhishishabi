@@ -37,14 +37,3 @@
 .top-card ul a:hover {
   color: rgb(0, 0, 255);
 }
-
-
-.date {
-  color: white;
-  z-index: 11;
-  font-size: 25px;
-  position: absolute;
-  right: 1%;
-  top: 0%;
-  padding: 10px;
-}
