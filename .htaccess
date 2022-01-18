@@ -2,8 +2,6 @@ ErrorDocument 404 /404
 ErrorDocument 500 /500
 ErrorDocument 408 /408
 
-Order deny,allow
-Deny from all
 
 RewriteEngine on
 
