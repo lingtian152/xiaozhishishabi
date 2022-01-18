@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@800&display=swap');
 
 
-* {
-	margin: 0;
-	padding: 0;
-}
-
 .image-lib {
 	display: flex;
-  flex-direction: row;
+	flex-direction: row;
 }
 
 .image-lib ul {
@@ -31,8 +26,8 @@
 	margin-top: 10px;
 	align-items: center;
 	height: 45%;
-	width: 45%;;
-	transition: 0.25s all cubic-bezier(0.25, 0.25, 0.25,1);
+	width: 45%;
+	transition: 0.25s all cubic-bezier(0.25, 0.25, 0.25, 1);
 }
 
 .view {
@@ -97,6 +92,6 @@
 
 @media (max-width: 800px) {
 	.image-lib {
-	  flex-direction: column;
+		flex-direction: column;
 	}
-  }
+}

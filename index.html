@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="zh-Hans" manifest="./config/cache.appcache">
-  <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
-    <title>傻逼小志の博客</title>
-    <script data-ad-client="ca-pub-8229591117115313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/topbar.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/changelog.css">
-    <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="./js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
-    <script  src="./js/jquery.cookie.js"></script>
-    <script src='./js/sql/sql-asm.js'></script>
-    <script src="./js/device.js"></script>
-  </head>
-  <body id="body">
-    <div class="top-card">
-      <ul class="nav nav-tabs">
-        <a href="./index" aria-label="home" class="nav-link active" aria-current="page">
-          <li>首页</li>
-        </a>
-        <a href="./image" aria-label="images" class="nav-link">
-          <li>背景图片库</li>
-        </a>
-        <a href="./about" aria-label="about" class="nav-link">
-          <li>关于</li>
-        </a>
-      </ul>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link href="./css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="./js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./css/top-bar.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <script src="./js/jquery.cookie.js"></script>
+  <script src="./js/device.js"></script>
+  <title>傻逼小志の博客</title>
+</head>
+
+<body id="body">
+  <div class="nav top-bar bg-dark full-width bg-dark-a border-bottom z-index-100 sticky-top display-flex">
+    <ul class="nav nav-pills item-align">
+      <li class="nav-item active remove-text-style">
+        <a href="./index" class="nav-link font-color-white remove-text-decoration font-size-20 current-page" aria-current="page">首页</a>
+      </li>
+      <li class="nav-item remove-text-style">
+        <a href="./image" class="nav-link font-color-white remove-text-decoration font-size-20">图片库</a>
+      </li>
+      <li class="nav-item remove-text-style">
+        <a href="./about" class="nav-link font-color-white remove-text-decoration font-size-20">关于</a>
+      </li>
+      <li class="nav-item remove-text-style">
+        <a href="./changelog" class="nav-link font-color-white remove-text-decoration font-size-20">更新日志</a>
+      </li>
+    </ul>
+  </div>
+  <!-- card -->
+  <div class="position-fixed z-index-100 card bg-white-a center border-radius-25 pop-card transition-0-25" id="pop-card" style="width: 15%; height: 20%;">
+    <div class="card-body">
+      <p class="font-size-25 text-align font-color-dark card-heade clear-float top-35 position-absolute left-15 bold">本网站仅调戏小志</p>
+      <button type="button" id="close" class="none-border text-align font-size-25 right position-absolute font-color-dark bg-transparent bottom-0 bold" style="width: 25%; height: 25%;">已阅</button>
     </div>
-    <div id="pop-card" class="pop-card">
-      <form id="form">
-        <h1>公告
-          <h2>
-            本网站仅调戏小志，谁敢当真，自裁罢
-          </h2>
-        </h1>
-        <button id="close"type="button">确定</button>
-      </form>
-    </div>
-    
-    <div class="card" style="position: absolute; top: 40% !important; left: 50% !important; transform: translate(-50%, -50%) !important;">
-      <fieldset style="border: 5px solid rgba(40, 40, 40, 0.45);">
-        <legend style="font-size: 25px; text-align: center; background-color: rgba(25, 25, 25,0.25); color:white;">小志是谁</legend>
-        <ul class="lis-group list-group-flush" style="color: white; background-color: rgba(40, 40, 40, 0.25); padding: 15px; height: auto;">
-          <li class="list-group-item" style="font-size: 25px; background-color: rgba(25, 25, 25,0.25); color: white;">一个屑人罢了，不需要在意这么多</li>
-          <li class="list-group-item" style="font-size: 25px; background-color: rgba(25, 25, 25,0.25); color: white;">小志是傻逼！！！！！</li>
-          <li class="list-group-item" style="font-size: 25px; background-color: rgba(25, 25, 25,0.25); color: white;">一个保底人</li>
-          <li class="list-group-item" style="font-size: 25px; background-color: rgba(25, 25, 25,0.25); color: white;">一个炼铜术士</li>
-          <li class="list-group-item" style="font-size: 25px; background-color: rgba(25, 25, 25,0.25); color: white;">我的小志&#129316;&#129316;&#129316;</li>
-        </ul>
-      </fieldset>
-    </div>
-    <div class="changelog" id="changelog">
-      <fieldset>
-        <legend>更新日志: </legend>
-        <h3 class="changelog-text" id="changelog-txt">
-          
-        </h3>
-      </fieldset>
-    </div>
-    <!--footer-->
-    <div class="footer">
-      <nav>
-        <p>©2021-2022</p>
-        <a href="Mailto:1553396053skwa@gmail.com">联系</a>
-        <a class="github" href="https://github.com/qw1324/xiaozhishishabi">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-        </a>
-      </nav>
-    </div>
-    <script type="text/javascript" src="./js/index.js"></script>
-    <script type="text/javascript" src="./js/image.js"></script>
-    <script type="text/javascript" src="./js/changlog.js"></script>
-    <body>
+  </div>
+
+  <div class="center bg-dark-a tab border-radius-25" style="width: 50%; height: 40%;">
+    <fieldset class="border-2-solid-white center text-align border-radius-25">
+      <legend class="font-color-white">小志是谁?</legend>
+      <ul class="list-group remove-text-style">
+        <li class="font-color-white font-size-20 padiding-bottom-top-2">炼铜</li>
+        <li class="font-color-white font-size-20 padiding-bottom-top-2">保底人</li>
+        <li class="font-color-white font-size-20 padiding-bottom-top-2">喜欢玩gal</li>
+        <li class="font-color-white font-size-20 padiding-bottom-top-2">一个废物</li>
+        <li class="font-color-white font-size-20 padiding-bottom-top-2">纯傻逼</li>
+      </ul>
+    </fieldset>
+  </div>
+
+  <!-- footer -->
+  <div class="fixed-bottom full-width bg-dark auto-height bg-dark-a z-index-100">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center my-3 border-top margin-5">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="text-muted font-color-white font-size-20">©2021-2022 凌天</span>
+      </div>
+  
+      <div class="col-md-4 d-flex align-items-center">
+        <a class="font-color-white font-size-20 remove-text-decoration" href="mailto:15533096053skwa@gmail.com"><span>联系</span></a>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-1">
+          <a href="https://github.com/qw1324/xiaozhishishabi" class="text-mute">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script type="text/javascript" src="./js/close.js"></script>
+  <script type="text/javascript" src="./js/image.js"></script>
+  <body>
+
 </html>

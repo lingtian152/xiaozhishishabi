@@ -1,19 +1,12 @@
 .changelog {
-    position: absolute;
-    left: 2%;
-    top: 20%;
-    background: rgba(200, 200, 200, 0.6);
-    width: 15%;
-    height: 60%;
     color: white;
-    background-color: rgba(100, 100, 100, 0.3);
-    font-size: 21px;
+    font-size: 20px;
     padding: 10px;
-    border-radius: 25px;
-    text-align: center;
-    overflow-y: scroll;
-    max-width: 25%;
-    max-height: 75%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .changelog fieldset {
@@ -26,9 +19,15 @@
 }
 
 .changelog-text {
-    background-color: rgba(3, 3, 3, 0.3);
     padding: 25px;
-    border-radius: 25px;
-    margin: 15px;
     line-height: 45px;
+    text-align: center;
+    height: 90%;
+    width: 100%;
+}
+
+h4 {
+    background-color: rgba(50,50,50, 0.45);
+    width: auto !important;
+    border-radius: 25px;
 }
