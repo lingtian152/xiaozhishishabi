@@ -1,9 +1,15 @@
+RewriteEngine On
+
 ErrorDocument 404 /404
 ErrorDocument 500 /500
 ErrorDocument 408 /408
 
+RedirectMatch 403 /\..*$
 
-RewriteEngine on
+<Files ~ "\js\|\css\">  
+    Order Allow,Deny
+    Deny from All
+</Files>
 
 RewriteRule ^folder/?$ - [F,L]
 
@@ -12,7 +18,7 @@ RewriteRule ^folder/?$ - [F,L]
 </FilesMatch>
 
 <IfModule mod_rewrite.c>
-   RewriteEngine On
+
    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
    RewriteRule .* http://localhost/html/%1 [R=301,L]
 
