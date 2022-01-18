@@ -3,6 +3,8 @@ RewriteEngine On
 ErrorDocument 404 /404
 ErrorDocument 500 /500
 ErrorDocument 408 /408
+ErrorDocument 403 /403
+
 
 RedirectMatch 403 /\..*$
 
