@@ -23,18 +23,10 @@
 <body style="padding: 0; margin: 0;" id="body">
   <div class="nav top-bar bg-dark full-width bg-dark-a border-bottom z-index-100 sticky-top display-flex">
     <ul class="nav nav-pills item-align">
-      <li class="nav-item active remove-text-style">
-        <a href="./index" class="nav-link font-color-white remove-text-decoration font-size-20">首页</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./image" class="nav-link font-color-white remove-text-decoration font-size-20">图片库</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./about" class="nav-link font-color-white remove-text-decoration font-size-20 current-page">关于</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./changelog" class="nav-link font-color-white remove-text-decoration font-size-20">更新日志</a>
-      </li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './index.html'">首页</li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './image.html'">图片库</li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 current-page" onclick="self.location = './about.html'">关于</li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './changelog.html'">更新日志</li>
     </ul>
   </div>
   <div class="card"
@@ -55,7 +47,7 @@
         <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">凌天。</h3>
       </h1>
       <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">这个网站开源吗？
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">开源的，点下面的github图标就会前往开源页面。</h3>
+        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">开源的，点下面的github图标就会前往开源页面<a href="https://github.com/qw1324/xiaozhishishabi" class="remove-text-decoration">或者这里</a>。</h3>
       </h1>
       <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">背景图哪来的？
         <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">广大网友发的。</h3>

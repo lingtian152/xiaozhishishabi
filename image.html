@@ -20,23 +20,15 @@
   <link rel="stylesheet" href="./css/image.css">
   <title>图片库</title>
   </head>
-  <body style="background: #9ec8da">
+  <body style="background-color: #cbd2b9">
     <div class="nav top-bar bg-dark full-width bg-dark-a border-bottom z-index-100 sticky-top display-flex">
-    <ul class="nav nav-pills item-align">
-      <li class="nav-item active remove-text-style">
-        <a href="./index" class="nav-link font-color-white remove-text-decoration font-size-20">首页</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./image" class="nav-link font-color-white remove-text-decoration font-size-20 current-page">图片库</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./about" class="nav-link font-color-white remove-text-decoration font-size-20">关于</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./changelog" class="nav-link font-color-white remove-text-decoration font-size-20">更新日志</a>
-      </li>
-    </ul>
-  </div>
+      <ul class="nav nav-pills item-align">
+        <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './index.html'">首页</li>
+        <li class="nav-item remove-text-style nav-link font-color-white font-size-20 current-page" onclick="self.location = './image.html'">图片库</li>
+        <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './about.html'">关于</li>
+        <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './changelog.html'">更新日志</li>
+      </ul>
+    </div>
     <div class="image-lib">
       <ul id="lib" class="item-align">
         <img id="img" class="rounded mx-auto d-block" src="./icon/loading.gif" src-data="./images/bg1.png" />

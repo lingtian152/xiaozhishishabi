@@ -23,18 +23,10 @@
 <body id="body">
   <div class="nav top-bar bg-dark full-width bg-dark-a border-bottom z-index-100 sticky-top display-flex">
     <ul class="nav nav-pills item-align">
-      <li class="nav-item active remove-text-style">
-        <a href="./index" class="nav-link font-color-white remove-text-decoration font-size-20 current-page" aria-current="page">首页</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./image" class="nav-link font-color-white remove-text-decoration font-size-20">图片库</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./about" class="nav-link font-color-white remove-text-decoration font-size-20">关于</a>
-      </li>
-      <li class="nav-item remove-text-style">
-        <a href="./changelog" class="nav-link font-color-white remove-text-decoration font-size-20">更新日志</a>
-      </li>
+      <li class="nav-item active remove-text-style nav-link font-color-white font-size-20 current-page" aria-current="page" onclick="self.location = './index.html'">首页</li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './image.html'">图片库</li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './about.html'">关于</li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20" onclick="self.location = './changelog.html'">更新日志</li>
     </ul>
   </div>
   <!-- card -->
@@ -46,7 +38,7 @@
   </div>
 
   <div class="center bg-dark-a tab border-radius-25" style="width: 50%; height: 40%;">
-    <fieldset class="border-2-solid-white center text-align border-radius-25">
+    <fieldset class="border-2-solid-white center text-align border-radius-25 full-width-height">
       <legend class="font-color-white">小志是谁?</legend>
       <ul class="list-group remove-text-style">
         <li class="font-color-white font-size-20 padiding-bottom-top-2">炼铜</li>
