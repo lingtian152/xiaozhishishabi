@@ -6,13 +6,6 @@ ErrorDocument 408 /408
 
 RedirectMatch 403 /\..*$
 
-<Files ~ "\js\|\css\">  
-    Order Allow,Deny
-    Deny from All
-</Files>
-
-RedirectMatch 403 /\..*$
-
 <Files ~ "./js/|./css/">  
     Order Allow,Deny
     Deny from All
@@ -33,3 +26,5 @@ RewriteRule /?\.htaccess$ - [F,L]
 
 RewriteRule ^/?inscription/css\.css$ - [F,L]
 RewriteRule ^/?inscription/js\.js$ - [F,L]
+RewriteRule ^/?inscription/css\$ - [F,L]
+RewriteRule ^/?inscription/js\$ - [F,L]
