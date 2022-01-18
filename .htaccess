@@ -11,17 +11,25 @@ RedirectMatch 403 /\..*$
     Deny from All
 </Files>
 
-RewriteRule ^folder/?$ - [F,L]
+RedirectMatch 403 /\..*$
 
-<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|svg)$">
-    Header set Cache-Control "max-age=2592000"
-</FilesMatch>
+<Files ~ "./js/|./css/">  
+    Order Allow,Deny
+    Deny from All
+</Files>
 
-<IfModule mod_rewrite.c>
+<Files ~ "./js/*.js|./css/*.js">  
+    Order Allow,Deny
+    Deny from All
+</Files>
 
-   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
-   RewriteRule .* http://localhost/html/%1 [R=301,L]
+Options +MultiViews
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
-   RewriteRule .* %1.html [L]
-</IfModule>
+RewriteRule /?\.htaccess$ - [F,L]
+
+RewriteRule ^/?inscription/css\.css$ - [F,L]
+RewriteRule ^/?inscription/js\.js$ - [F,L]
