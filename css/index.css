@@ -168,3 +168,8 @@
 .padiding-bottom-top-2 {
     padding: 2% 0% !important;
 }
+
+.no-margin { margin: 0 !important;}
+
+.no-padding { padding: 0 !important;}
+.padding-5 { padding 5px!important;}
