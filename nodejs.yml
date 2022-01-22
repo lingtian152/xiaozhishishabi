@@ -1,6 +1,6 @@
 - name: Setup Node.js environment
   uses: actions/setup-node@v2.5.1
 
-run: npm install
-run: npm test
-run: npm uninstall
+-run: npm install
+-run: npm test
+-run: npm uninstall
