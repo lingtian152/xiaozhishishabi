@@ -1,2 +1,7 @@
 - name: Cache
   uses: actions/cache@v2.1.7
+  with:
+    path: |
+      ~/cache
+      !~/cache/exclude
+    key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
