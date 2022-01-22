@@ -14,15 +14,14 @@ function loadlink() {
   $.ajax({
     url: "../log.txt",
     dataType: "text",
-    async: false,
+    async: true,
     success: function (data) {
       $("#changelog-txt").html(changeline(data));
     },
   });
 }
 
-
-loadlink(); // This will run on page load
+loadlink();
 setInterval(function () {
   loadlink(); // this will run after every 5 seconds
 }, 5000);
