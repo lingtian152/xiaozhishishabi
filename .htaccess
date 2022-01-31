@@ -7,7 +7,7 @@ ErrorDocument 403 /403
 
 RedirectMatch 403 /\..*$
 
-<Files ~ "/js/|/css/">  
+<Files ~ "\js\|\css\">  
     Order Allow,Deny
     Deny from All
 </Files>
