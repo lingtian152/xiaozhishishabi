@@ -9,8 +9,6 @@ function changeline(text) {
 }
 
 function loadlink() {
-  $.ajaxSetup ({cache:true});
-
   $.ajax({
     url: "../log.txt",
     dataType: "text",
