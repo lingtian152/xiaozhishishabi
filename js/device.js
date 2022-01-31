@@ -16,5 +16,5 @@ function iswap() {
 }
 
 window.onload = function() {
-  iswap()
+  iswap();
 }

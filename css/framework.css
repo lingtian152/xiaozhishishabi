@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .item-align {
     display: flex;
     margin: 0 auto !important;
