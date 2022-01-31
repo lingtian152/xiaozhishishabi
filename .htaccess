@@ -7,25 +7,14 @@ ErrorDocument 403 /403
 
 RedirectMatch 403 /\..*$
 
-<Files ~ "./js/|./css/">  
+<Files ~ "/js/|/css/">  
     Order Allow,Deny
     Deny from All
 </Files>
 
-<Files ~ "/js/*.js|/css/*.js">  
-    Order Allow,Deny
-    Deny from All
-</Files>
 
 Options +MultiViews
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-RewriteRule /?\.htaccess$ - [F,L]
-
-RewriteRule ^/?inscription/css\.css$ - [F,L]
-RewriteRule ^/?inscription/js\.js$ - [F,L]
-RewriteRule ^/?inscription/css\$ - [F,L]
-RewriteRule ^/?inscription/js\$ - [F,L]
