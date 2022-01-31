@@ -23,8 +23,18 @@
     <ul class="nav nav-pills item-align padding-5">
       <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2 current-page"
         aria-current="page" onclick="self.location = './index'">首页</li>
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
-        onclick="self.location = './image'">图片库</li>
+      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2">
+        <div class="dropdown">
+          <button class="dropdown-toggle font-size-20 font-color-white none-border bg-transparent" type="button"
+            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            图片库
+          </button>
+          <ul class="dropdown-menu margin-5 padding-5" aria-labelledby="dropdownMenuButton1">
+            <li class="dropdown-item" onclick="self.location = './image/pc-image'">电脑端动漫壁纸</li>
+            <li class="dropdown-item" onclick="self.location = './image/pe-image'">移动端动漫壁纸</li>
+          </ul>
+        </div>
+      </li>
       <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
         onclick="self.location = './about'">关于</li>
       <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
@@ -33,13 +43,13 @@
   </div>
   <!-- card -->
   <div class="position-fixed z-index-100 card bg-white-a center border-radius-25 pop-card transition-0-25" id="pop-card"
-    style="width: 15%; height: 20%;">
-    <div class="card-body">
-      <p class="font-size-25 text-align font-color-dark card-heade clear-float top-35 position-absolute left-15 bold">
+    style="width: 25%; height: 25%;">
+    <div class="card-body" style="width: auto; height: auto;">
+      <p class="font-size-25 text-align font-color-dark center clear-float position-absolute bold">
         本网站仅调戏小志</p>
       <button type="button" id="close"
         class="none-border text-align font-size-25 right position-absolute font-color-dark bg-transparent bottom-0 bold"
-        style="width: 25%; height: 25%;">已阅</button>
+        style="width: auto; height: auto;">已阅</button>
     </div>
   </div>
 
@@ -81,7 +91,28 @@
       </ul>
     </footer>
   </div>
-  <script type="text/javascript" src="./js/close.js"></script>
+  <script type="text/javascript">
+    if ($.cookie("pop-card") == null) {
+      $("#close").click(function () {
+        $.cookie("pop-card", "true", {
+          expires: 7
+        });
+        $(".pop-card").css({
+          '-webkit-transform': 'scale(0, 0)',
+          '-moz-transform': 'scale(0, 0)',
+          '-ms-transform': 'scale(0, 0)',
+          '-o-transform': 'scale(0, 0)',
+          'transform': 'scale(0, 0)'
+        });
+        setTimeout(() => {
+          $("#pop-card").remove();
+        }, 2500);
+      });
+    } else {
+      $("#pop-card").remove();
+    }
+  </script>
+
   <body>
 
 </html>
