@@ -5,7 +5,6 @@ ErrorDocument 500 /500
 ErrorDocument 408 /408
 ErrorDocument 403 /403
 
-
 RedirectMatch 403 /\..*$
 
 <Files ~ "./js/|./css/">  
@@ -13,7 +12,7 @@ RedirectMatch 403 /\..*$
     Deny from All
 </Files>
 
-<Files ~ "./js/*.js|./css/*.js">  
+<Files ~ "/js/*.js|/css/*.js">  
     Order Allow,Deny
     Deny from All
 </Files>
