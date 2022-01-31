@@ -9,9 +9,9 @@ function iswap() {
   var windowsce = uA.match(/windows ce/i) == "windows ce";
   var windowsmd = uA.match(/windows mobile/i) == "windows mobile";
   if (!(ipad || iphone || midp || uc7 || uc || android || windowsce || windowsmd)) {
-    $("#body").css("background-image", `url(${"../images" + "/bg" + Math.floor(1 + Math.random() * 15) + ".png"})`);
+    $("#body").css("background-image", `url(${"../images/pc" + "/bg" + Math.floor(1 + Math.random() * 15) + ".png"})`);
   } else {
-    $("#body").css("background-image", `url(${"../images/mobile/bg1.png"})`);
+    $("#body").css("background-image", `url(${"../images/mobile" + "/bg" + Math.floor(1 + Math.random() * 4) + ".png"})`);
   }
 }
 
