@@ -1,8 +1,8 @@
 RewriteEngine On
 
-ErrorDocument 404 /error/404
-ErrorDocument 408 /error/408
-ErrorDocument 403 /error/403
+ErrorDocument 404 ./error/404
+ErrorDocument 408 ./error/408
+ErrorDocument 403 ./error/403
 
 RedirectMatch 403 /\..*$
 
