@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@800&display=swap');
-
-
 .pc-image {
-	display: flex;
-	flex-direction: row;
+	min-height: 25%;
+	min-width: 25%;
 }
 
 .pc-image ul {
@@ -14,10 +11,14 @@
 	transform: translate(-50%, -50%);
 	width: auto;
 	height: auto;
+	min-height: 25%;
+	min-width: 25%;
 }
 
 /* Create four equal columns that sits next to each other */
 .pc-image ul img {
+	min-height: 25%;
+	min-width: 25%;
 	justify-content: center;
 	flex: 100%;
 	max-width: 25%;
@@ -43,7 +44,6 @@
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	padding: auto;
 }
 
 .view-right {
@@ -58,7 +58,7 @@
 .download {
 	border-radius: 10px;
 	color: rgb(255, 255, 255);
-	font-size: 25px;
+	font-size: auto;
 	width: 70%;
 	height: 15%;
 	position: absolute;
@@ -70,8 +70,9 @@
 }
 
 #view-img {
+	z-index: 55;
 	position: absolute;
-	width: auto;
+	width: 87.6%;
 	height: 100%;
 	align-items: center;
 }

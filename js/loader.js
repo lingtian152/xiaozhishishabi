@@ -53,7 +53,6 @@ function img_loading() {
     tt.src = "../icon/loading.gif";
     Imagess(tt.getAttribute("src-data"), function (obj) {
       tt.src = obj.src;
-      tt.removeAttribute("src-data");
     });
   }
 }
