@@ -1,1 +1,1 @@
-[更新日志](./changelog.md)
+[更新日志](./.github//changelog.md)
