@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@800&display=swap');
 
 
-.image-lib {
+.pc-image {
 	display: flex;
 	flex-direction: row;
 }
 
-.image-lib ul {
+.pc-image ul {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -17,7 +17,7 @@
 }
 
 /* Create four equal columns that sits next to each other */
-.image-lib ul img {
+.pc-image ul img {
 	justify-content: center;
 	flex: 100%;
 	max-width: 25%;
@@ -43,6 +43,7 @@
 	top: 0;
 	bottom: 0;
 	margin: auto;
+	padding: auto;
 }
 
 .view-right {
@@ -50,12 +51,11 @@
 	right: 0%;
 	background-color: rgba(200, 200, 200, 0.75);
 	height: 100%;
-	width: 20%;
+	width: 13.4%;
 	top: 0%;
 }
 
 .download {
-	background-color: rgb(150, 150, 150);
 	border-radius: 10px;
 	color: rgb(255, 255, 255);
 	font-size: 25px;
@@ -71,15 +71,13 @@
 
 #view-img {
 	position: absolute;
-	width: 80%;
+	width: auto;
 	height: 100%;
 	align-items: center;
 }
 
 #close-view {
-	color: red;
 	border: none;
-	background: rgba(125, 125, 125, 0.25);
 	display: inline;
 	position: absolute;
 	font-family: 'Be Vietnam Pro', sans-serif;
@@ -91,7 +89,7 @@
 }
 
 @media (max-width: 800px) {
-	.image-lib {
+	.pc-image {
 		flex-direction: column;
 	}
 }
