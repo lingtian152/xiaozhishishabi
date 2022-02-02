@@ -25,7 +25,8 @@
         aria-current="page" onclick="self.location = './index'">首页</li>
       <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2">
         <div class="dropdown">
-          <button class="dropdown-toggle font-size-20 font-color-white none-border bg-transparent no-outline"
+          <button
+            class="dropdown-toggle font-size-20 font-color-white none-border bg-transparent no-outline gg-arrow-down-o"
             type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             图片库
           </button>
@@ -42,14 +43,14 @@
     </ul>
   </div>
   <!-- card -->
-  <div class="position-fixed z-index-100 card bg-white-a center pop-card transition-0-25" id="pop-card"
+  <div class="position-fixed z-index-100 card bg-white-a center pop-card" id="pop-card"
     style="width: 25vw; height: 15vw; border-radius: 15px;">
     <div class="card-body" style="width: auto; height: auto;">
       <p class="text-align font-color-dark center clear-float position-absolute bold"
         style="width: auto; height: auto; font-size: 2.5vw;">
         本网站仅调戏小志</p>
       <button type="button" id="close"
-        class="none-border text-align position-absolute bottom-0 font-color-dark bg-transparent bottom-0 bold no-outline transition-0-25"
+        class="none-border text-align position-absolute bottom-0 font-color-dark bg-transparent bottom-0 bold no-outline"
         style="width: 100%; height: auto; font-size: 1.5vw;">已阅</button>
     </div>
   </div>
@@ -98,20 +99,14 @@
         $.cookie("pop-card", "true", {
           expires: 7
         });
-        $(".pop-card").css({
-          '-webkit-transform': 'scale(0, 0)',
-          '-moz-transform': 'scale(0, 0)',
-          '-ms-transform': 'scale(0, 0)',
-          '-o-transform': 'scale(0, 0)',
-          'transform': 'scale(0, 0)'
-        });
-        setTimeout(() => {
-          $("#pop-card").remove();
-        }, 2500);
+        $("#pop-card").fadeOut(500);
       });
+      setTimeout(() => {
+        $("#pop-card").remove();
+      }, 5000);
     } else {
       $("#pop-card").remove();
-    }
+    };
   </script>
 
   <body>

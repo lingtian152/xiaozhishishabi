@@ -1,7 +1,0 @@
-.nav-item {
-    transition: 0.25s all cubic-bezier(.57,.2,.32,.78);
-}
-
-.nav-item:hover {
-    background-color: rgba(255,255,255, 0.25);
-}
