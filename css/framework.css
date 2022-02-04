@@ -214,10 +214,13 @@ body {
     border-radius: 0.25rem;
 }
 
+.border-radius-15 {
+    border-radius: 15px;
+}
 
-
-
-
+.padding-10 {
+    padding: 10px;
+}
 
 
 

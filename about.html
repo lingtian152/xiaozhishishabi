@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/css/framework.css">
   <script src="./js/jquery.cookie.js"></script>
   <script src="./js/image.js"></script>
+  <script src="./js/rollbar.js"></script>
   <title>关于</title>
 </head>
 
@@ -41,35 +42,17 @@
     </ul>
   </div>
 
-  <div class="card"
-    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 50%; width: 40%; background: rgba(200, 200, 200, 0.25); border-radius: 25px; overflow-y: scroll;">
-    <fieldset
-      style="border: 5px solid rgba(50, 50, 50, 0.25); background: rgba(40, 40, 40, 0.25); height: auto; width: 100%; border-radius: 25px;">
-      <legend style="text-align: center; color: white;">关于</legend>
-      <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">这个网站是干嘛的?
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">单纯建的玩。</h3>
-      </h1>
-      <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">小志知道吗？
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">知道。</h3>
-      </h1>
-      <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">会继续维护吗？
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">不确定, 看个人情况。</h3>
-      </h1>
-      <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">开发者是谁？
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">凌天。</h3>
-      </h1>
-      <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">这个网站开源吗？
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">开源的，点下面的github图标就会前往开源页面<a
-            href="https://github.com/qw1324/xiaozhishishabi" class="remove-text-decoration">或者这里</a>。</h3>
-      </h1>
-      <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">背景图哪来的？
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">广大网友发的。</h3>
-      </h1>
-      <h1 style="background: rgba(200, 200, 200, 0.25); color: white;">将来会适配移动端吗？
-        <h3 style="background-color: rgba(200, 200, 200, 0.25); color: white;">会的。准确来讲是重新写一个。</h3>
-      </h1>
+
+  <div class="position-absolute center bg-transparent auto-height text-align item-align padding-25" style="width: 30vw; ">
+    <fieldset style="width: 100%;" class="font-color-white bg-dark-a border-radius-15">
+      <legend class="text-alignfont-color-white" style="font-size: auto;">关于</legend>
+      <h2 class="title font-color-white border-bottom padding-5 margin-2" style="font-size: auto;">这网站是干嘛的
+        <h3 class="content font-color-white margin-2 padding-10" style="font-size: auto;">单纯就是搭着玩</h3>
+      </h2>
+      <h5 class="padding-10">更多词条待添加...</h5>
     </fieldset>
   </div>
+
   <!-- footer -->
   <div class="fixed-bottom full-width bg-dark auto-height bg-dark-a z-index-100">
     <footer class="d-flex flex-wrap justify-content-between align-items-center my-3 framework.css margin-5">
@@ -78,10 +61,12 @@
       </div>
 
       <div class="col-md-4 d-flex align-items-center">
-        <a class="font-color-white font-size-20 remove-text-decoration"
-          href="mailto:15533096053skwa@gmail.com"><span>联系</span></a>
-      </div>
+        <a class="font-color-white font-size-20 remove-text-decoration padding-right"
+          href="https://bit.ly/3HtPryG"><span>bug反馈</span></a>
 
+        <a class="font-color-white font-size-20 remove-text-decoration"
+        href="https://bit.ly/34xxxfU"><span>提交背景图片</span></a>
+      </div>
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-1">
           <a href="https://github.com/qw1324/xiaozhishishabi" class="text-mute">
