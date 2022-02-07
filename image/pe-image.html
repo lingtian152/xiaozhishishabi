@@ -10,34 +10,42 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/top-bar.css">
   <link rel="stylesheet" href="../css/framework.css">
+  <link rel="stylesheet" href="../css/icons.css">
   <script src="../js/rollbar.js"></script>
 </head>
 
 <body>
-  <div class="nav top-bar bg-dark full-width bg-dark-a border-bottom z-index-100 sticky-top display-flex">
-    <ul class="nav nav-pills item-align padding-5">
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
-        onclick="self.location = '../index'">首页</li>
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2">
-        <div class="dropdown">
-          <button
-            class="dropdown-toggle font-size-20 font-color-white none-border bg-transparent no-outline gg-arrow-down-o"
-            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            图片库
-          </button>
-          <ul class="dropdown-menu margin-5 padding-5" aria-labelledby="dropdownMenuButton1">
-            <li class="dropdown-item" onclick="self.location = './pc-image'">电脑端动漫壁纸</li>
-            <li class="dropdown-item current-page" aria-current="page" onclick="self.location = './pe-image'">移动端动漫壁纸
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
-        onclick="self.location = '../about'">关于</li>
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
-        onclick="self.location = '../changelog'">更新日志</li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark-a sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand font-color-white" href="../index">小志是傻逼</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link font-color-white"href="../index">首页</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-color-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              图片库
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="./image/pc-image">电脑端动漫壁纸</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./image/pe-image">移动端动漫壁纸</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-color-white" href="../about">关于</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-color-white" href="../changelog">更新日志</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="center font-size-25 bold clear-float">
     即将到来
   </div>

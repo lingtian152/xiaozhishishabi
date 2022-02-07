@@ -11,6 +11,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="./css/top-bar.css">
   <link rel="stylesheet" href="/css/framework.css">
+     <link rel="stylesheet" href="./css/icons.css">
   <script src="./js/jquery.cookie.js"></script>
   <script src="./js/image.js"></script>
   <script src="./js/rollbar.js"></script>
@@ -18,32 +19,45 @@
 </head>
 
 <body id="body">
-  <div class="nav top-bar bg-dark full-width bg-dark-a z-index-100 sticky-top display-flex">
-    <ul class="nav nav-pills item-align padding-5">
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
-        onclick="self.location = './index'">首页</li>
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2">
-        <div class="dropdown">
-          <button
-            class="dropdown-toggle font-size-20 font-color-white none-border bg-transparent no-outline gg-arrow-down-o"
-            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            图片库
-          </button>
-          <ul class="dropdown-menu margin-5 padding-5 no-outline" aria-labelledby="dropdownMenuButton1">
-            <li class="dropdown-item" onclick="self.location = './image/pc-image'">电脑端动漫壁纸</li>
-            <li class="dropdown-item" onclick="self.location = './image/pe-image'">移动端动漫壁纸</li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2 current-page"
-        aria-current="page" onclick="self.location = './about'">关于</li>
-      <li class="nav-item remove-text-style nav-link font-color-white font-size-20 margin-2"
-        onclick="self.location = './changelog'">更新日志</li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark-a sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand font-color-white" href="./index">小志是傻逼</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link font-color-white" href="./index">首页</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-color-white" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              图片库
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="./image/pc-image">电脑端动漫壁纸</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./image/pe-image">移动端动漫壁纸</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-color-white active" aria-current="page" href="./about">关于</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-color-white" href="./changelog">更新日志</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
-  <div class="position-absolute center bg-transparent auto-height text-align item-align padding-25" style="width: 30vw; ">
+  <div class="position-absolute center bg-transparent auto-height text-align item-align padding-25"
+    style="width: 30vw; ">
     <fieldset style="width: 100%;" class="font-color-white bg-dark-a border-radius-15">
       <legend class="text-alignfont-color-white" style="font-size: auto;">关于</legend>
       <h2 class="title font-color-white border-bottom padding-5 margin-2" style="font-size: auto;">这网站是干嘛的
@@ -57,15 +71,14 @@
   <div class="fixed-bottom full-width bg-dark auto-height bg-dark-a z-index-100">
     <footer class="d-flex flex-wrap justify-content-between align-items-center my-3 framework.css margin-5">
       <div class="col-md-4 d-flex align-items-center">
-        <span class="text-muted font-color-white font-size-20">©2021-2022 凌天</span>
+        <span class="text-muted font-color-white">©2021-2022 凌天</span>
       </div>
 
       <div class="col-md-4 d-flex align-items-center">
-        <a class="font-color-white font-size-20 remove-text-decoration padding-right"
-          href="https://bit.ly/3HtPryG"><span>bug反馈</span></a>
+        <a class="font-color-white remove-text-decoration padding-right"
+          href="https://bit.ly/3HtPryG"><span>提交bug反馈</span></a>
 
-        <a class="font-color-white font-size-20 remove-text-decoration"
-        href="https://bit.ly/34xxxfU"><span>提交背景图片</span></a>
+        <a class="font-color-white remove-text-decoration" href="https://bit.ly/34xxxfU" flex><span>提交背景图片</span></a>
       </div>
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-1">
