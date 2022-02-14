@@ -11,29 +11,35 @@
   <link rel="stylesheet" href="../css/top-bar.css">
   <link rel="stylesheet" href="../css/framework.css">
   <link rel="stylesheet" href="../css/icons.css">
+  <link rel="stylesheet" href="../css/image.css">
   <script src="../js/rollbar.js"></script>
+  <script src="../js/loader.js"></script>
 </head>
 
-<body>
+<body style="background-color: #cbd2b9;">
   <nav class="navbar navbar-expand-lg navbar-light bg-dark-a sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand font-color-white" href="../index">小志是傻逼</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link font-color-white"href="../index">首页</a>
+            <a class="nav-link font-color-white" href="../index">首页</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle font-color-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle font-color-white" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               图片库
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="./image/pc-image">电脑端动漫壁纸</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="./image/pe-image">移动端动漫壁纸</a></li>
+              <li><a class="dropdown-item" href="./pc-image">电脑端动漫壁纸</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./pe-image">移动端动漫壁纸</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -46,8 +52,18 @@
       </div>
     </div>
   </nav>
-  <div class="center font-size-25 bold clear-float">
-    即将到来
+
+  <div class="pe-image">
+    <ul id="lib" class="item-align center">
+      <img id="img" class="rounded mx-auto d-block pe-flex-item1" index-data="1" src="../icon/loading.gif"
+        src-data="../images/mobile/bg1.png" />
+      <img id="img" class="rounded mx-auto d-block pe-flex-item2" index-data="1" src="../icon/loading.gif"
+        src-data="../images/mobile/bg2.png" />
+      <img id="img" class="rounded mx-auto d-block pe-flex-item3" index-data="1" src="../icon/loading.gif"
+        src-data="../images/mobile/bg3.png" />
+      <img id="img" class="rounded mx-auto d-block pe-flex-item4" index-data="1" src="../icon/loading.gif"
+        src-data="../images/mobile/bg4.png" />
+    </ul>
   </div>
   <!-- footer -->
   <div class="fixed-bottom full-width bg-dark auto-height bg-dark-a z-index-100">

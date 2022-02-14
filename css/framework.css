@@ -253,21 +253,19 @@ body {
 
 @media (min-width:641px) {
     footer div span, .download {
-        font-size: 1.15rem;
-        padding: 0 !important;
-        margin: 0 !important;
+        font-size: 1.25rem;
     }
 }
 
 @media (min-width:961px) {
     footer div span, .download {
-        font-size: 1.25rem;
+        font-size: 1.35rem;
     }
 }
 
 @media (min-width:1025px) {
     footer div span, .download {
-        font-size: 1.25rem;
+        font-size: 1.35rem;
     }
 }
 
