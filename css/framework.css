@@ -125,6 +125,16 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.center-2 {
+    position: absolute !important;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto !important;
+    transform: translateY(-75%);
+}
+
 .bg-white-a {
     background-color: rgba(255, 255, 255, 0.85) !important;
 }
@@ -235,42 +245,29 @@ body {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-@media (min-width:320px) {
-    footer div span, .download {
-        font-size: 0.525rem;
-        padding: 0 !important;
-        margin: 0 !important;
+@media only screen and (max-width: 600px) {
+    .footer div span {
+        font-size: 0.625rem;
     }
 }
 
-@media (min-width:481px) {
-    footer div span, .download {
-        font-size: 1.15rem;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-}
 
-@media (min-width:641px) {
-    footer div span, .download {
+@media only screen and (max-width: 1000px) {
+    .footer div span {
         font-size: 1.25rem;
     }
-}
 
-@media (min-width:961px) {
-    footer div span, .download {
-        font-size: 1.35rem;
+    .download {
+        font-size: 0.938rem;
     }
 }
 
-@media (min-width:1025px) {
-    footer div span, .download {
-        font-size: 1.35rem;
+@media only screen and (min-width: 1000px) {
+    footer div span {
+        font-size: 1.563rem;
     }
-}
 
-@media (min-width:1281px) {
-    footer div span, .download {
-        font-size: 1.5625rem;
+    .download {
+        font-size: 1.25rem;
     }
 }
